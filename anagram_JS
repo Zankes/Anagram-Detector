@@ -1,0 +1,26 @@
+var primes = ["2", "3", "5", "7", "11", "13", "17", "19", "23", "29", "31", "37", "41", "43", "47", "53", "59", "61", "67", "71", "73", "79", "83", "89", "97", "101"]
+
+
+$("#check").click(function() {
+
+  var str1 = $("#1st").val();
+  var prd1 = 1;
+  var prd2 = 1;
+
+  for (var i = 0; i < str1.length; i++) {
+    prd1= prd1 * (primes[str1.charCodeAt(i) - 97]);
+  }
+
+  var str2 = $("#2nd").val();
+
+  for (var o = 0; o < str2.length; o++) {
+    prd2 = prd2 * (primes[str2.charCodeAt(o) - 97]);
+  }
+
+if (prd1 == prd2) {
+alert("ANAGRAM!!!")
+} else {
+alert("NOPE!")
+}
+
+});

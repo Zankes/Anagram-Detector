@@ -1,0 +1,17 @@
+<body>
+
+  <h1>
+    ANAGRAM DETECTOR
+  </h1>
+
+  <p>
+    First Word: <input type="string" id="1st"><br>
+  </p>
+
+  <p>
+    Second Word: <input type="string" id="2nd"><br>
+  </p>
+
+  <button id="check">Checkmate?</button>
+
+</body>
